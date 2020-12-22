@@ -334,8 +334,7 @@ let onLoad = function () {
   ];
 
   function checkBerlinFullBlocks() {
-    if (berlinFullBlocks.length == 0) {
-      console.log('berlinFullBlocks fired!')
+    if (berlinFullBlocks.length == 0) {      
       const newBerlinBlocks = [
         berlinSDBlock1,
         berlinSDBlock2,
@@ -348,8 +347,7 @@ let onLoad = function () {
   }
 
   function checkCDMXFullBlocks() {
-    if (cdmxFullBlocks.length == 0) {
-      console.log('cdmxFullBlocks fired')
+    if (cdmxFullBlocks.length == 0) {      
       const newCDMXBlocks = [
         cdmxSDBlock1,
         cdmxSDBlock2,
@@ -401,7 +399,7 @@ let onLoad = function () {
   function refillBerlinBlocks() {
     if (berlinBlocksL.length == 0) {
       // Re-up the array if exhausted
-      const newBerlinBlocksL = [
+      newBerlinBlocksL = [
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.wav',
@@ -411,7 +409,7 @@ let onLoad = function () {
       ];
 
 
-      const newBerlinBlocksR = [
+      newBerlinBlocksR = [
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.R.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.R.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.R.wav',
@@ -525,7 +523,7 @@ let onLoad = function () {
   function refillCDMXBlocks() {
     if (cdmxBlocksL.length == 0) {
       // Re-up the array if exhausted
-      const newCDMXBlocksL = [
+      newCDMXBlocksL = [
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.wav',
@@ -534,7 +532,7 @@ let onLoad = function () {
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.wav'
       ];
 
-      const newCDMXBlocksR = [
+      newCDMXBlocksR = [
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.R.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.R.wav',
         'https://el-movimiento.s3.amazonaws.com/Transition_Blocks/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.R.wav',
@@ -1230,7 +1228,7 @@ let onLoad = function () {
   ];
 
   berlinBeat = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Beat/Berlin_MusBlock1_Beat.R.wav'
+    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Beat/Berlin_MusBlock1_Beat.wav'
   ];
 
   berlinVoices = [
