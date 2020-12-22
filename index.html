@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Goethe Project</title>
+  </head>
+  <body>   
+     
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 text-center">
+          <div style="width:100%">
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-5 mb-2">
+          <h3>El movimiento en la quietud</h3>
+          <p class="lead">
+            <img src="./images/headphones.svg" class="icon-lg" alt="headphones">
+            Escuchar con auriculares por favor            
+          </p>
+          <p>                       
+            Estas invitado a mudarse los iconos alrededor de la pantalla como ellos aparecen.  El icono actualmente en la pantalla es tu lugar
+            en el espacio, mientras otro iconos aparecer en todo la experiencia, que permite se mudarse los puestos de los sonidos.
+            Por Esteban Ruiz-Velasco (Ciudad de México), Ernesto Cárcamo Cavazos (Berlin), and Daniel McKemie (Nueva York). 
+                   
+          </p>
+          <div class="row">
+            
+            <div class="col-md-3 mb-2">
+              <button type="button" class="btn btn-primary" id="playButton">Play</button>
+            </div>
+            <div class="col-md-3 mb-2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="aboutButton">
+                About
+              </button>
+            </div>  
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">About the Project</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        "El movimiento en la quietud" es una experiencia sonora interactiva que lleva al escucha en una caminata imaginaria, 
+                        entretejiendo paisajes sonoros y música contemporánea de la Ciudad de México y Berlín. A través de una narrativa algorítmica                         
+                        basada en una página web, el escucha se sumerge en múltiples mundos binaurales, con la habilidad de moverse en el espacio e 
+                        interactuar con diversos elementos sonoros. Cada instancia es por tanto una experiencia inmersiva única para cada escucha.<br /><br />
+                      
+                        El proyecto fue realizado como parte del Virtual Partner Residencies Program del Instituto Goethe en Berlín, con diseño 
+                        sonoro y composición de Esteban Ruiz-Velasco (Ciudad de México) y Ernesto Cárcamo Cavazos (Berlín), así como programación y 
+                        diseño web de Daniel McKemie (Nueva York)
+                      </div>
+                      <br /><br /><br />
+                      <div>"El movimiento en la quietud" is a web-based sonic experience that takes the listener in an imaginary walk, 
+                      weaving in and out the unique soundscapes and contemporary music scenes in Mexico City and Berlin. 
+                      The listener is taken through an algorithmic narrative with the ability to move in the city space and interact with sonic elements in binaural audio. 
+                      Each instance is thus a unique, interactive, and immersive experience for every listener.<br /><br />
+                      
+                      The project was realized as part of the Goethe Institut’s Virtual Partner Residencies Program with sound design and music composition by 
+                      Esteban Ruiz-Velasco (Mexico City) and Ernesto Cárcamo Cavazos (Berlin), and programming, web-design, and architecture by Daniel McKemie (New York City). 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/icon-1.svg" class="icon" alt="source" id="sourceAIcon">
+            <img src="./images/icon-2.svg" class="icon" alt="source" id="sourceBIcon">
+            <img src="./images/icon-3.svg" class="icon" alt="source" id="sourceCIcon">
+            <img src="./images/icon-4.svg" class="icon" alt="source" id="sourceDIcon">                        
+            <img src="./images/icon-5.svg" class="icon" alt="source" id="sourceEIcon">            
+            <img src="./images/icon-5.svg" class="icon" alt="source" id="sourceFIcon">
+            <img src="./images/icon-5.svg" class="icon" alt="source" id="sourceGIcon">
+            <img src="./images/icon-5.svg" class="icon" alt="source" id="sourceHIcon">
+            <img src="./images/person.svg" class="icon" alt="source" id="listenerIcon">     
+            
+            
+          </div> 
+          <div class="row justify-content-master">
+            <div class="col-md-12">
+              <p>Project made possible through a generous contribution from the Goethe Institut</p>              
+            <img src="./images/goethe-logo.png" alt="source" id="goethe">
+            </div>
+          </div>            
+          <div class="form-row" id="room-row">            
+            <div class="form-group col-md-6">              
+              <label for="roomDimensionsSelect" class="col-form-label">Room Dimensions</label>
+              <select id="roomDimensionsSelect" class="form-control">
+                <option value="small" selected>Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="huge">Huge</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="roomMaterialsSelect" class="col-form-label">Wall Materials</label>
+              <select id="roomMaterialsSelect" class="form-control">
+                <option value="brick" selected>Brick</option>
+                <option value="curtains">Curtains</option>
+                <option value="marble">Marble</option>
+                <option value="outside">Outdoors</option>
+              </select>
+            </div>
+          </div>                    
+        </div>        
+      </div>
+    </div>
+
+    <script src="./libs/resonance-audio.min.js"></script>
+    <script src="./canvas-control.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
