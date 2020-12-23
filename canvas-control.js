@@ -184,11 +184,3 @@ CanvasControl.prototype._cursorMoveFunc = function (event) {
     return false;
   }  
 };
-
-// CanvasControl.prototype._getElementName = function (event) {  
-//   let cursorPosition = this.getCursorPosition(event);
-//   this._selected = this.getNearestElement(cursorPosition);
-//   this._cursorUpdateFunc(cursorPosition);
-//   document.body.style = 'overflow: hidden;';
-//   return this._selected;
-// };
