@@ -179,7 +179,7 @@ let onLoad = function () {
       initAudio();
       randomStart();
       playButton.style.visibility = 'hidden';
-      // aboutButton.style.visibility = 'hidden';
+      aboutButton.style.visibility = 'hidden';
       window.scrollTo(0, 0);
       document.getElementsByTagName('html')[0].style.overflow = 'hidden';
       document.getElementsByTagName('body')[0].style.overflow = 'hidden';
