@@ -320,17 +320,17 @@ let onLoad = function () {
 
   // Global form functionality
   let berlinFullBlocks = [
-    // berlinSDBlock1,
+    berlinSDBlock1,
     berlinSDBlock2,
-    // berlinMusBlock1,
-    // berlinMusBlock2,
+    berlinMusBlock1,
+    berlinMusBlock2,
 
   ];
   let cdmxFullBlocks = [
-    // cdmxSDBlock1,
-    // cdmxSDBlock2,
-    // cdmxMusBlock1,
-    // cdmxMusBlock2
+    cdmxSDBlock1,
+    cdmxSDBlock2,
+    cdmxMusBlock1,
+    cdmxMusBlock2
   ];
 
   function checkBerlinFullBlocks() {
@@ -441,6 +441,7 @@ let onLoad = function () {
 
     switch (audioElements[6].src) {
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('cdmx');
         }, 41000);
@@ -450,7 +451,8 @@ let onLoad = function () {
         }, 46000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3':
-        setTimeout(() => {
+        console.log(audioElements[6].src)
+        setTimeout(() => {          
           macroForm('cdmx');
         }, 55000);
         setTimeout(() => {
@@ -459,7 +461,8 @@ let onLoad = function () {
         }, 60000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3':
-        setTimeout(() => {
+        console.log(audioElements[6].src)
+        setTimeout(() => {          
           macroForm('cdmx');
         }, 45000);
         setTimeout(() => {
@@ -468,7 +471,8 @@ let onLoad = function () {
         }, 50000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3':
-        setTimeout(() => {
+        console.log(audioElements[6].src)
+        setTimeout(() => {          
           macroForm('cdmx');
         }, 60000);
         setTimeout(() => {
@@ -477,7 +481,8 @@ let onLoad = function () {
         }, 65000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3':
-        setTimeout(() => {
+        console.log(audioElements[6].src)
+        setTimeout(() => {          
           macroForm('cdmx');
         }, 60000);
         setTimeout(() => {
@@ -486,6 +491,7 @@ let onLoad = function () {
         }, 65000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('cdmx');
         }, 50000);
@@ -562,6 +568,7 @@ let onLoad = function () {
 
     switch (audioElements[6].src) {
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 45000);
@@ -571,6 +578,7 @@ let onLoad = function () {
         }, 50000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 53000);
@@ -580,6 +588,7 @@ let onLoad = function () {
         }, 58000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 48000);
@@ -589,6 +598,7 @@ let onLoad = function () {
         }, 53000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 59000);
@@ -598,6 +608,7 @@ let onLoad = function () {
         }, 64000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 53000);
@@ -607,6 +618,7 @@ let onLoad = function () {
         }, 58000);
         break;
       case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3':
+        console.log(audioElements[6].src)
         setTimeout(() => {
           macroForm('berlin');
         }, 56000);
@@ -783,6 +795,7 @@ let onLoad = function () {
 
   // COMPLETE
   function berlinSDBlock1() {
+    console.log('berlinSDBlock1')
     function checkReversesArray() {
       if (reverses.length == 0) {
         // Re-up the array if exhausted
@@ -1048,8 +1061,8 @@ let onLoad = function () {
   ];
   
   // COMPLETE without EFFECTS
-  function berlinSDBlock2() {
-    console.log('berlin block')
+  function berlinSDBlock2() { 
+    console.log('berlinSDBlock2')
 
     function part1() {
       audioElements[4].src = baseFilesBerlin_SDBlock2[0];
@@ -1263,7 +1276,8 @@ let onLoad = function () {
 
 
   // COMPLETE
-  function berlinMusBlock1() {    
+  function berlinMusBlock1() {   
+    console.log('berlinMusBlock1')
 
     function part1() {
       audioElements[4].src = baseFilesBerlin_MusBlock1[0];
@@ -1495,7 +1509,8 @@ let onLoad = function () {
 
 
   // COMPLETE
-  function berlinMusBlock2() {
+  function berlinMusBlock2() {  
+    console.log('berlinMusBlock2')
     function checkBottlesArray() {
       if (berlinBottles.length == 0) {
         // Re-up the array if exhausted
@@ -1552,7 +1567,7 @@ let onLoad = function () {
       audioElements[1].src = berlinBottles[1];
       audioElements[1].load();
       audioElements[1].volume = 1;      
-      audioElements[0].play();
+      audioElements[1].play();
     }
 
     function part3() {
@@ -1771,6 +1786,7 @@ let onLoad = function () {
 
   // COMPLETE
   function cdmxSDBlock1() {
+    console.log('cdmxSDBlock1')
     function checkOutsideArray() {
       if (outside.length == 0) {
         // Re-up the array if exhausted
@@ -1784,7 +1800,7 @@ let onLoad = function () {
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside7.mp3',
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside8.mp3',
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3',
+          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3'
         ];
       }
     }
@@ -1805,7 +1821,7 @@ let onLoad = function () {
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices11.mp3',
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices12.mp3',
           'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3',
+          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3'
         ];
       }
     }
@@ -1849,7 +1865,7 @@ let onLoad = function () {
       fadeInElementFunction(canvasElements[2]);
 
       let pickBlock0 = Math.floor(Math.random() * outside.length);
-      audioElements[0].src = objects[pickBlock0];
+      audioElements[0].src = outside[pickBlock0];
       audioElements[0].load();
       audioElements[0].volume = 1;
       outside.splice(pickBlock0, 1);
@@ -2008,7 +2024,8 @@ let onLoad = function () {
 
 
   // COMPLETE
-  function cdmxSDBlock2() {    
+  function cdmxSDBlock2() {   
+    console.log('cdmxSDBlock2')
     function part1() {
       // REVERSED!
       audioElements[4].src = baseFilesCDMX_SDBlock2[1];
@@ -2161,6 +2178,7 @@ let onLoad = function () {
 
   // COMPLETE
   function cdmxMusBlock1() {
+    console.log('cdmxMusBlock1')
     function checkSticksArray() {
       if (cdmxMusBlock1_Sticks.length == 0) {
         // Re-up the array if exhausted
@@ -2460,7 +2478,8 @@ let onLoad = function () {
   ];
 
   // COMPLETE
-  function cdmxMusBlock2() {    
+  function cdmxMusBlock2() {   
+    console.log('cdmxMusBlock2') 
     function part1() {
       audioElements[4].src = baseFilesCDMX_MusBlock2[0];
       audioElements[5].src = baseFilesCDMX_MusBlock2[1];
@@ -2513,10 +2532,10 @@ let onLoad = function () {
       if (counter == 1) {
         part1();
       }
-      if (counter == 122) {
+      if (counter == 123) {
         part2();        
       }
-      if (counter == 142) { 
+      if (counter == 143) { 
         part3();                
       }
       if (counter == 276) {
