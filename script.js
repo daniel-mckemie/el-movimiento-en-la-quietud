@@ -72,8 +72,8 @@ let materialSelection = 'brick';
 let audioReady = false;
 
 // Disable keyboard play/pause
-navigator.mediaSession.setActionHandler('pause', function () {});
-navigator.mediaSession.setActionHandler('play', function () {});
+// navigator.mediaSession.setActionHandler('pause', function () {});
+// navigator.mediaSession.setActionHandler('play', function () {});
 
 /**
  * @private
@@ -376,23 +376,23 @@ let onLoad = function () {
 
   // Transition Processes
   berlinBlocksL = [
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3',
 
 
   ];
 
   berlinBlocksR = [
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.R.mp3'
   ];
 
 
@@ -400,22 +400,22 @@ let onLoad = function () {
     if (berlinBlocksL.length == 0) {
       // Re-up the array if exhausted
       newBerlinBlocksL = [
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3',
       ];
 
 
       newBerlinBlocksR = [
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.R.mp3'
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.R.mp3'
       ];
 
       berlinBlocksL = newBerlinBlocksL;
@@ -440,8 +440,7 @@ let onLoad = function () {
 
 
     switch (audioElements[6].src) {
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock1/Berlin-CDMX_TBlock.L.mp3':        
         setTimeout(() => {
           macroForm('cdmx');
         }, 41000);
@@ -450,8 +449,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 46000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock2/Berlin-CDMX_TBlock2.L.mp3':        
         setTimeout(() => {          
           macroForm('cdmx');
         }, 55000);
@@ -460,8 +458,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 60000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock3/Berlin-CDMX_TBlock3.L.mp3':        
         setTimeout(() => {          
           macroForm('cdmx');
         }, 45000);
@@ -470,8 +467,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 50000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock4/Berlin-CDMX_TBlock4.L.mp3':        
         setTimeout(() => {          
           macroForm('cdmx');
         }, 60000);
@@ -480,8 +476,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 65000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock5/Berlin-CDMX_TBlock5.L.mp3':        
         setTimeout(() => {          
           macroForm('cdmx');
         }, 60000);
@@ -490,8 +485,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 65000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/Berlin-CDMX/Berlin-CDMX_TBlock6/Berlin-CDMX_TBlock6.L.mp3':        
         setTimeout(() => {
           macroForm('cdmx');
         }, 50000);
@@ -509,42 +503,42 @@ let onLoad = function () {
   }
 
   cdmxBlocksL = [
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3'
   ];
 
   cdmxBlocksR = [
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.R.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.R.mp3'
   ];
 
   function refillCDMXBlocks() {
     if (cdmxBlocksL.length == 0) {
       // Re-up the array if exhausted
       newCDMXBlocksL = [
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3'
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3'
       ];
 
       newCDMXBlocksR = [
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.R.mp3',
-        'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.R.mp3'
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.R.mp3',
+        'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.R.mp3'
       ];
       cdmxBlocksL = newCDMXBlocksL;
       cdmxBlocksR = newCDMXBlocksR;
@@ -567,8 +561,7 @@ let onLoad = function () {
 
 
     switch (audioElements[6].src) {
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock1/CDMX-Berlin_TBlock1.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 45000);
@@ -577,8 +570,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 50000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock2/CDMX-Berlin_TBlock2.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 53000);
@@ -587,8 +579,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 58000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock3/CDMX-Berlin_TBlock3.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 48000);
@@ -597,8 +588,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 53000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock4/CDMX-Berlin_TBlock4.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 59000);
@@ -607,8 +597,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 64000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock5/CDMX-Berlin_TBlock5.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 53000);
@@ -617,8 +606,7 @@ let onLoad = function () {
           fadeOutAudioFunction(audioElements[7]);
         }, 58000);
         break;
-      case 'https://el-movimiento.s3.amazonaws.com/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3':
-        console.log(audioElements[6].src)
+      case 'https://d2fqwkydxqrupr.cloudfront.net/Transitions/CDMX-Berlin/CDMX-Berlin_TBlock6/CDMX-Berlin_TBlock6.L.mp3':        
         setTimeout(() => {
           macroForm('berlin');
         }, 56000);
@@ -743,82 +731,81 @@ let onLoad = function () {
 
   // Berlin_SDBlock1 DATA
   baseFilesBerlin_SDBlock1 = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Base/Berlin_SDBlock1_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Base/Berlin_SDBlock1_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Base/Berlin_SDBlock1_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Base/Berlin_SDBlock1_Base.R.mp3'
   ];
   glitches = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Glitches/Berlin_SDBlock1_Glitch1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Glitches/Berlin_SDBlock1_Glitch2.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Glitches/Berlin_SDBlock1_Glitch1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Glitches/Berlin_SDBlock1_Glitch2.mp3'
   ];
   reverses = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse14.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse15.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse16.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse17.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse18.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse19.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse15.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse16.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse17.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse18.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse19.mp3',
   ];
   reversesVerb = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb14.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb15.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb16.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb17.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb18.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb19.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb15.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb16.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb17.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb18.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb19.mp3',
   ];
 
   // COMPLETE
-  function berlinSDBlock1() {
-    console.log('berlinSDBlock1')
+  function berlinSDBlock1() {    
     function checkReversesArray() {
       if (reverses.length == 0) {
         // Re-up the array if exhausted
         reverses = [
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse14.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse15.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse16.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse17.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse18.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse19.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse15.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse16.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse17.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse18.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_Reverses/Berlin_SDBlock1_Reverse19.mp3',
         ];
       }
     }
@@ -827,25 +814,25 @@ let onLoad = function () {
       if (reversesVerb.length == 0) {
         // Re-up the array if exhausted
         reversesVerb = [
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb14.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb15.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb16.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb17.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb18.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb19.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb15.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb16.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb17.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb18.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock1/Berlin_SDBlock1_ReversesVerb/Berlin_SDBlock1_ReverseVerb19.mp3',
         ];
       }
     }
@@ -1042,27 +1029,26 @@ let onLoad = function () {
 
 
   baseFilesBerlin_SDBlock2 = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Base/Berlin_SDBlock2_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Base/Berlin_SDBlock2_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Base/Berlin_SDBlock2_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Base/Berlin_SDBlock2_Base.R.mp3'
   ];
 
   overDubs = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Overdubs/Berlin_SDBlock2_Overdubs.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Overdubs/Berlin_SDBlock2_Overdubs.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Overdubs/Berlin_SDBlock2_Overdubs.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Overdubs/Berlin_SDBlock2_Overdubs.R.mp3'
   ];
 
   randomMelody = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomMelody.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomMelody.mp3'
   ];
 
   randomChords = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomChords1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomChords2.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomChords1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_SDBlock2/Berlin_SDBlock2_Instruments/Berlin_SDBlock2_RandomChords2.mp3'
   ];
   
   // COMPLETE without EFFECTS
-  function berlinSDBlock2() { 
-    console.log('berlinSDBlock2')
+  function berlinSDBlock2() {     
 
     function part1() {
       audioElements[4].src = baseFilesBerlin_SDBlock2[0];
@@ -1254,30 +1240,29 @@ let onLoad = function () {
 
   // Berlin MusBlock1 DATA
   baseFilesBerlin_MusBlock1 = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Base/Berlin_MusBlock1_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Base/Berlin_MusBlock1_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Base/Berlin_MusBlock1_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Base/Berlin_MusBlock1_Base.R.mp3'
   ];
 
   berlinBassSynth = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_BassSynth/Berlin_MusBlock1_BassSynth.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_BassSynth/Berlin_MusBlock1_BassSynth.mp3'
   ];
 
   berlinBeat = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Beat/Berlin_MusBlock1_Beat.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Beat/Berlin_MusBlock1_Beat.mp3'
   ];
 
   berlinVoices = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_BackL.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_BackR.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_FrontL.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_FrontR.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_BackL.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_BackR.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_FrontL.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock1/Berlin_MusBlock1_Voices/Berlin_MusBlock1_Voices_FrontR.mp3'
   ];
 
 
 
   // COMPLETE
-  function berlinMusBlock1() {   
-    console.log('berlinMusBlock1')
+  function berlinMusBlock1() {       
 
     function part1() {
       audioElements[4].src = baseFilesBerlin_MusBlock1[0];
@@ -1464,44 +1449,44 @@ let onLoad = function () {
 
   // Berlin MUSBlock2 DATA
   baseFilesBerlin_MusBlock2 = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Base/Berlin_MusBlock2_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Base/Berlin_MusBlock2_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Base/Berlin_MusBlock2_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Base/Berlin_MusBlock2_Base.R.mp3'
 
   ];
   berlinInstruments = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Guitar.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Piano.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Vibes.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Guitar.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Piano.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Instruments/Berlin_MusBlock2_Vibes.mp3'
 
   ];
   berlinBellOverdubs = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_BellOverdubs/Berlin_MusBlock2_BellOverdubs.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_BellOverdubs/Berlin_MusBlock2_BellOverdubs.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_BellOverdubs/Berlin_MusBlock2_BellOverdubs.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_BellOverdubs/Berlin_MusBlock2_BellOverdubs.R.mp3'
 
   ];
 
   berlinBottles = [
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle8.mp3',    
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle14.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle15.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle16.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle17.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle18.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle19.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle20.mp3',
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle21.mp3',        
-    'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle22.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle8.mp3',    
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle15.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle16.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle17.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle18.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle19.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle20.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle21.mp3',        
+    'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle22.mp3'
 
 
   ];
@@ -1509,33 +1494,32 @@ let onLoad = function () {
 
 
   // COMPLETE
-  function berlinMusBlock2() {  
-    console.log('berlinMusBlock2')
+  function berlinMusBlock2() {
     function checkBottlesArray() {
       if (berlinBottles.length == 0) {
         // Re-up the array if exhausted
         berlinBottles = [
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle14.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle15.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle16.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle17.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle18.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle19.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle20.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle21.mp3',
-          'https://el-movimiento.s3.amazonaws.com/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle22.mp3'
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle15.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle16.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle17.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle18.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle19.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle20.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle21.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/Berlin/Berlin_MusBlock2/Berlin_MusBlock2_Bottles/Berlin_MusBlock_Bottle22.mp3'
 
 
         ];
@@ -1708,7 +1692,7 @@ let onLoad = function () {
       if (counter == 120) {
         part4();
       }
-      if (counter == 123) {        
+      if (counter == 125) {        
         audioElements[0].currentTime = 0;
         audioElements[1].currentTime = 0;
         audioElements[2].currentTime = 0;
@@ -1744,63 +1728,62 @@ let onLoad = function () {
 
   // CDMX_SDBlock1 DATA
   baseFilesCDMX_SDBlock1 = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Base/CDMX_SDBlock1_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Base/CDMX_SDBlock1_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Base/CDMX_SDBlock1_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Base/CDMX_SDBlock1_Base.R.mp3'
   ];
   outside = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3',
   ];
   voices = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3',    
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3',    
   ]
   objects = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects5.mp3',    
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects5.mp3',    
   ];
 
 
 
   // COMPLETE
-  function cdmxSDBlock1() {
-    console.log('cdmxSDBlock1')
+  function cdmxSDBlock1() {           
     function checkOutsideArray() {
       if (outside.length == 0) {
         // Re-up the array if exhausted
         outside = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3'
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Outside/CDMX_SDBlock1_Outside10.mp3'
         ];
       }
     }
@@ -1809,19 +1792,19 @@ let onLoad = function () {
       if (voices.length == 0) {
         // Re-up the array if exhausted
         voices = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3'
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Voices/CDMX_SDBlock1_Voices15.mp3'
         ];
       }
     }
@@ -1830,11 +1813,11 @@ let onLoad = function () {
       if (objects.length == 0) {
         // Re-up the array if exhausted
         objects = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock1/CDMX_SDBlock1_Objects/CDMX_SDBlock1_Objects5.mp3',
         ];
       }
     }
@@ -1908,8 +1891,8 @@ let onLoad = function () {
       glitchEvents1Timer = setInterval(fireGlitch1, 1000);
     }
 
-    function fireGlitch1() {
-      if (randomNumberFire1 < 12 && audioElements[0].readyState >= 2) {
+    function fireGlitch1() {      
+      if (randomNumberFire1 < 15 && audioElements[0].readyState >= 2) {        
         audioElements[0].currentTime = 0
         setTimeout(() => {
            pickNewOutsides(audioElements[0]);
@@ -1917,8 +1900,8 @@ let onLoad = function () {
       }
     }
 
-    function fireGlitch2() {
-      if (randomNumberFire2 < 6  && audioElements[1].readyState >= 2) {
+    function fireGlitch2() {            
+      if (randomNumberFire2 < 18  && audioElements[1].readyState >= 2) {        
         audioElements[1].currentTime = 0
         setTimeout(() => {
            pickNewVoices(audioElements[1]);
@@ -1926,8 +1909,8 @@ let onLoad = function () {
       }
     }
 
-    function fireGlitch3() {
-      if (randomNumberFire3 < 6  && audioElements[2].readyState >= 2) {
+    function fireGlitch3() {      
+      if (randomNumberFire3 < 8  && audioElements[2].readyState >= 2) {
         audioElements[2].currentTime = 0
         setTimeout(() => {
            pickNewObjects(audioElements[2]);
@@ -1951,6 +1934,7 @@ let onLoad = function () {
       elem.src = voices[pickBlock];
       elem.load();
       voices.splice(pickBlock, 1);
+      elem.play()
       checkVoicesArray();
     }
 
@@ -1960,6 +1944,7 @@ let onLoad = function () {
       elem.src = objects[pickBlock];
       elem.load();
       objects.splice(pickBlock, 1);
+      elem.play();
       checkObjectsArray();
     }
 
@@ -1969,6 +1954,7 @@ let onLoad = function () {
       elem.src = outside[pickBlock];
       elem.load();
       outside.splice(pickBlock, 1);
+      elem.play();
       checkOutsideArray();
     }
 
@@ -1980,7 +1966,7 @@ let onLoad = function () {
       randomNumberFire2 = Math.floor(Math.random() * 60);
       randomNumberFire3 = Math.floor(Math.random() * 60);
       counter++
-      if (counter == 1) {
+      if (counter == 1) {        
         part1();
       }
       if (counter == 25) { // 25
@@ -1990,7 +1976,7 @@ let onLoad = function () {
         audioElements[2].play();
         startFireGlitches();
       }
-      if (counter == 133) { // 113
+      if (counter == 133) {
         fadeInElementFunction(canvasElements[0]);
         stopFireGlitches();
         startOutsides();
@@ -2014,18 +2000,17 @@ let onLoad = function () {
 
   // CDMX SDBlock2 DATA
   baseFilesCDMX_SDBlock2 = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Base.R.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Base.R.mp3',
   ];
   cdmx_SDBlock2Files = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Buzzing.mp3', // BUZZING       
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Construction.mp3', // CONSTRUCTION     
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Buzzing.mp3', // BUZZING       
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_SDBlock2/CDMX_SDBlock2_Construction.mp3', // CONSTRUCTION     
   ];
 
 
   // COMPLETE
-  function cdmxSDBlock2() {   
-    console.log('cdmxSDBlock2')
+  function cdmxSDBlock2() {       
     function part1() {
       // REVERSED!
       audioElements[4].src = baseFilesCDMX_SDBlock2[1];
@@ -2102,102 +2087,102 @@ let onLoad = function () {
 
   // cdmxMusBlock1 DATA
   baseFilesCDMX_MusBlock1 = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Base/CDMX_MusBlock1_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Base/CDMX_MusBlock1_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Base/CDMX_MusBlock1_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Base/CDMX_MusBlock1_Base.R.mp3'
 
   ]
 
   cdmxMusBlock1_Sticks = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks14.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks15.mp3',    
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks15.mp3',    
   ];
 
   cdmxMusBlock1_Bows = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows10.mp3',    
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows10.mp3',    
 
   ];
 
   cdmxMusBlock1_SticksRev = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev11.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev14.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev15.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev16.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev11.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev15.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev16.mp3',
 
   ];
 
   cdmxMusBlock1_BowsRev = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev1.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev2.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev3.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev4.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev5.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev6.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev7.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev8.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev9.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev10.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev12.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev13.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev14.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev1.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev2.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev3.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev4.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev5.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev6.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev7.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev8.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev9.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev10.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev12.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev13.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev14.mp3',
 
   ];
 
   // COMPLETE
-  function cdmxMusBlock1() {
-    console.log('cdmxMusBlock1')
+  function cdmxMusBlock1() {  
+    console.log('cdmx');  
     function checkSticksArray() {
       if (cdmxMusBlock1_Sticks.length == 0) {
         // Re-up the array if exhausted
         cdmxMusBlock1_Sticks = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks14.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks15.mp3',          
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Sticks/CDMX_MusBlock1_Sticks15.mp3',          
         ];
       }
     }
@@ -2206,16 +2191,16 @@ let onLoad = function () {
       if (cdmxMusBlock1_Bows.length == 0) {
         // Re-up the array if exhausted
         cdmxMusBlock1_Bows = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_Bows/CDMX_MusBlock1_Bows10.mp3',
 
         ];
       }
@@ -2225,22 +2210,22 @@ let onLoad = function () {
       if (cdmxMusBlock1_SticksRev.length == 0) {
         // Re-up the array if exhausted
         cdmxMusBlock1_SticksRev = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev11.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev14.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev15.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev16.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev11.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev15.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_SticksRev/CDMX_MusBlock1_SticksRev16.mp3',
 
         ];
       }
@@ -2250,19 +2235,19 @@ let onLoad = function () {
       if (cdmxMusBlock1_BowsRev.length == 0) {
         // Re-up the array if exhausted
         cdmxMusBlock1_BowsRev = [
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev1.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev2.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev3.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev4.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev5.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev6.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev7.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev8.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev9.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev10.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev12.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev13.mp3',
-          'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev14.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev1.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev2.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev3.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev4.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev5.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev6.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev7.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev8.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev9.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev10.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev12.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev13.mp3',
+          'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock1/CDMX_MusBlock1_BowsRev/CDMX_MusBlock1_BowsRev14.mp3',
 
         ];
       }
@@ -2283,6 +2268,7 @@ let onLoad = function () {
 
       canvasElements[0].x = Math.random();
       canvasElements[0].y = Math.random();
+      fadeInElementFunction(canvasElements[0]);
 
       canvasElements[1].x = Math.random();
       canvasElements[1].y = Math.random();
@@ -2291,28 +2277,28 @@ let onLoad = function () {
       let pickBlock0 = Math.floor(Math.random() * cdmxMusBlock1_Sticks.length);
       audioElements[0].src = cdmxMusBlock1_Sticks[pickBlock0];
       audioElements[0].load();
-      audioElements[0].volume = 0;
-      cdmxMusBlock1_Sticks.splice(pickBlock0, 1);
+      audioElements[0].volume = 1;      
+      cdmxMusBlock1_Sticks.splice(pickBlock0, 1);      
       checkSticksArray();
 
       let pickBlock1 = Math.floor(Math.random() * cdmxMusBlock1_Bows.length);
       audioElements[1].src = cdmxMusBlock1_Bows[pickBlock1];
       audioElements[1].load();
-      audioElements[1].volume = 0;
+      audioElements[1].volume = 1;
       cdmxMusBlock1_Bows.splice(pickBlock1, 1);
       checkBowsArray();
 
       let pickBlock2 = Math.floor(Math.random() * cdmxMusBlock1_SticksRev.length);
       audioElements[2].src = cdmxMusBlock1_SticksRev[pickBlock2];
       audioElements[2].load();
-      audioElements[2].volume = 0;
+      audioElements[2].volume = 1;
       cdmxMusBlock1_SticksRev.splice(pickBlock2, 1);
       checkSticksRevArray();
 
       let pickBlock3 = Math.floor(Math.random() * cdmxMusBlock1_BowsRev.length);
       audioElements[3].src = cdmxMusBlock1_BowsRev[pickBlock3];
       audioElements[3].load();
-      audioElements[3].volume = 0;
+      audioElements[3].volume = 1;
       cdmxMusBlock1_BowsRev.splice(pickBlock3, 1);
       checkBowsRevArray();
 
@@ -2343,7 +2329,7 @@ let onLoad = function () {
     }
 
     function startSticks() {
-      if (randomNumberFire1 < 12 && audioElements[0].readyState >= 2) {
+      if (randomNumberFire1 < 16 && audioElements[0].readyState >= 2) {
         audioElements[0].currentTime = 0
         setTimeout(() => {
            pickNewSticks(audioElements[0]);
@@ -2352,7 +2338,7 @@ let onLoad = function () {
     }
 
     function startBows() {
-      if (randomNumberFire2 < 6  && audioElements[1].readyState >= 2) {
+      if (randomNumberFire2 < 10  && audioElements[1].readyState >= 2) {
         audioElements[1].currentTime = 0
         setTimeout(() => {
            pickNewBows(audioElements[1]);
@@ -2361,7 +2347,7 @@ let onLoad = function () {
     }
 
     function startSticksReversed() {
-      if (randomNumberFire3 < 7  && audioElements[2].readyState >= 2) {
+      if (randomNumberFire3 < 16  && audioElements[2].readyState >= 2) {
         audioElements[2].currentTime = 0
         setTimeout(() => {
            pickNewSticksRev(audioElements[2]);
@@ -2441,7 +2427,9 @@ let onLoad = function () {
         audioElements[1].play();
         startSticksBows();
       }
-      if (counter == 170) {     
+      if (counter == 170) { 
+        fadeInElementFunction(canvasElements[2]);
+        fadeInElementFunction(canvasElements[3]);
         audioElements[2].play();
         audioElements[3].play();
         startSticksBowsReversed();
@@ -2467,19 +2455,18 @@ let onLoad = function () {
 
   // CDMX MusBlock2 DATA
   baseFilesCDMX_MusBlock2 = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_Base.L.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_Base.R.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_Base.L.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_Base.R.mp3'
   ];
   cdmx_MusBlock2Files = [
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_VibesNoise.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_PianoNoise.mp3',
-    'https://el-movimiento.s3.amazonaws.com/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_PianoTransients.mp3'
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_VibesNoise.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_PianoNoise.mp3',
+    'https://d2fqwkydxqrupr.cloudfront.net/CDMX/CDMX_MusBlock2/CDMX_MusBlock2_PianoTransients.mp3'
 
   ];
 
   // COMPLETE
-  function cdmxMusBlock2() {   
-    console.log('cdmxMusBlock2') 
+  function cdmxMusBlock2() {       
     function part1() {
       audioElements[4].src = baseFilesCDMX_MusBlock2[0];
       audioElements[5].src = baseFilesCDMX_MusBlock2[1];
@@ -2556,12 +2543,12 @@ let onLoad = function () {
 
 };
 
-// function windowClose() {
-//   window.close();
-// }
+function windowClose() {
+  window.close();
+}
 
-// setTimeout(() => {
-//   windowClose()
-// }, 5400000);
+setTimeout(() => {
+  windowClose()
+}, 5400000);
 
 window.addEventListener('load', onLoad);
